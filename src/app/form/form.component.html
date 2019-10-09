@@ -1,0 +1,52 @@
+<div class="container">
+    
+    
+    <form  (ngSubmit)="createBook()" class="col-md-6">
+        <fieldset>
+        <div class="form-group">
+        <label for="my-input">Employee Name</label>
+        <input placeholder="Employee name" class="form-control" type="text"name="name" [(ngModel)]="name">
+    </div>
+
+    <div class="form-group">
+            <label for="my-input">DOB</label>
+            <input placeholder="Please enter in DD/MM/YYYY format" class="form-control" type="number" name="dob" [(ngModel)]="dob" >
+        </div>
+
+        <div class="form-group">
+                <label for="my-input">Home Adress</label>
+                <input placeholder="Enter Address" class="form-control" type="text" name="address" [(ngModel)]="address" >
+            </div>
+            <div class="form-group">
+                    <label for="my-input">Mobile Number</label>
+                    <input placeholder="Enter mobile number" class="form-control" type="text" name="phonenum" [(ngModel)]="phonenum" >
+        
+                </div>
+            </fieldset> 
+            <fieldset>
+                            <div class="form-group">
+                            <label for="my-input">Degree</label>
+                            <input placeholder="Enter Highest Degree" class="form-control" type="text"name="degree" [(ngModel)]="degree">
+                        </div>
+                    
+                        <div class="form-group">
+                                <label for="my-input">Marks</label>
+                                <input placeholder="Please enter in percentage" class="form-control" type="number" name="marks" [(ngModel)]="marks" >
+                            </div>
+                    
+                            <div class="form-group">
+                                    <label for="my-input">Stream</label>
+                                    <input placeholder="Enter your Stream " class="form-control" type="text" name="stream" [(ngModel)]="stream" >
+                                </div>
+                                <div class="form-group">
+                                        <label for="my-input">College</label>
+                                        <input placeholder="Enter College name" class="form-control" type="text" name="college" [(ngModel)]="college" >
+                                    </div>
+            </fieldset>
+            
+        
+            <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+        
+
+</div>

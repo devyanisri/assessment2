@@ -1,0 +1,33 @@
+<div class="container">
+        
+        
+        <form  (ngSubmit)="editBook()" class="col-md-6">
+            <fieldset>
+            <div class="form-group">
+            <label for="my-input">Employee Name</label>
+            <input placeholder="Employee name" class="form-control" type="text"name="name" [(ngModel)]="book.name">
+        </div>
+    
+        <div class="form-group">
+                <label for="my-input">DOB</label>
+                <input placeholder="Please enter in DD/MM/YYYY format" class="form-control" type="number" name="dob" [(ngModel)]="book.dob" >
+            </div>
+    
+            <div class="form-group">
+                    <label for="my-input">Home Address</label>
+                    <input placeholder="Enter Adress" class="form-control" type="text" name="address" [(ngModel)]="book.address" >
+                </div>
+                <div class="form-group">
+                        <label for="my-input">Mobile Number</label>
+                        <input placeholder="Enter mobile number" class="form-control" type="text" name="phonenum" [(ngModel)]="book.phonenum" >
+            
+                    </div>
+                </fieldset> 
+                <button class="btn btn-primary" type="submit">Edit</button>
+        </form>
+            
+    
+    </div>
+    
+    
+    
